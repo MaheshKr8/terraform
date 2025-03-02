@@ -1,5 +1,5 @@
 # terraform
-Deploying Kubernetes using terrafrom!!!
+Deploying Kubernetes using terraform!!!
 
 ===============
 
