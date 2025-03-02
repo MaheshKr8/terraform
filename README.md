@@ -14,8 +14,8 @@ For MacOs:
 
   2. Install kubectl
 
-# brew install kubectl
-# kubectl version --client
+#brew install kubectl
+#kubectl version --client
 
 
 
@@ -28,15 +28,15 @@ For MacOs:
 
 2. Set  the subscription ID
 
-# az account set --subscription <your_subscription_id>
+#az account set --subscription <your_subscription_id>
 
   3. Create service principle  account for authentication while deploying AKS using terraform :
 
-# az ad sp create-for-rbac --name "terraform-sp" --role Contributor --scopes /subscriptions/d199062a-9d18-43ed-bee5-666c1b771e79
+#az ad sp create-for-rbac --name "terraform-sp" --role Contributor --scopes /subscriptions/d199062a-9d18-43ed-bee5-666c1b771e79
 
   4. Verify Authentication:-
 
-# az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
+#az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
 
 
 
