@@ -1,5 +1,5 @@
-# terraform
-Deploying Kubernetes using terraform!!!
+# Terraform
+Deploying Kubernetes using terrafrom!!!
 
 ===============
 
@@ -21,7 +21,7 @@ For MacOs:
 
 ===============
 
-1. login to azure portal.
+1. login to azure portal through Azure CLI.
 
 #az login
 
@@ -30,11 +30,11 @@ For MacOs:
 
 #az account set --subscription <your_subscription_id>
 
-  3. Create service principle  account for authentication while deploying AKS using terraform :
+3. Create service principle  account for authentication while deploying AKS using terraform :
 
 #az ad sp create-for-rbac --name "terraform-sp" --role Contributor --scopes /subscriptions/<<Subscription-Id>>
 
-  4. Verify Authentication:-
+4. Verify Authentication:-
 
 #az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
 
@@ -48,19 +48,15 @@ az account show --query id --output tsv
 5. Initialise terraform
 	#terraform init
 
-  6. Validate the terraform 
+6. Validate the terraform 
 	#terraform plan
 
-  7. Run the terraform
+7. Run the terraform
 	#terrafrom apply 
 
 
 Check All name spaces of Kubernetes and pods
 
-
-
-
-8.)Delete the Kubernetes
+8. Delete the Kubernetes
 
 #terraform destroy -auto-approve
-
