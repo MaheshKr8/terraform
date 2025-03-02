@@ -32,7 +32,7 @@ For MacOs:
 
   3. Create service principle  account for authentication while deploying AKS using terraform :
 
-#az ad sp create-for-rbac --name "terraform-sp" --role Contributor --scopes /subscriptions/d199062a-9d18-43ed-bee5-666c1b771e79
+#az ad sp create-for-rbac --name "terraform-sp" --role Contributor --scopes /subscriptions/<<Subscription-Id>>
 
   4. Verify Authentication:-
 
