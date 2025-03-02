@@ -38,7 +38,10 @@ For MacOs:
 
 #az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
 
-
+export ARM_CLIENT_ID=“<APPID>"
+export ARM_CLIENT_SECRET="<password>"
+export ARM_TENANT_ID="<tenant>"
+export ARM_SUBSCRIPTION_ID="<your_subscription_id>"
 
 Verify Subscription ID
 
